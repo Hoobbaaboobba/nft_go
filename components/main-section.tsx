@@ -1,4 +1,8 @@
 import Image from "next/image";
+import cat from "../public/photo1.svg";
+import kaban from "../public/kaban.svg";
+import monkey from "../public/monkey.svg";
+import hero from "../public/hero.svg";
 
 const MainSection = () => {
   return (
@@ -13,7 +17,13 @@ const MainSection = () => {
           </h2>
         </div>
         <div className="max-w-[300px] w-full">
-          <Image src="photo1.svg" alt="cat" width={307} height={417} />
+          <Image
+            placeholder="blur"
+            src={cat}
+            alt="cat"
+            width={307}
+            height={417}
+          />
         </div>
       </div>
       <div className="max-w-[1400px] w-full flex gap-6 translate-y-[-80px]">
@@ -31,19 +41,37 @@ const MainSection = () => {
       </div>
       <div className="max-w-[1400px] w-full flex gap-4 justify-start items-start">
         <div className="relative flex flex-col justify-start items-center">
-          <Image src="/kaban.svg" alt="kaban" width={367} height={214} />
+          <Image
+            src={kaban}
+            placeholder="blur"
+            alt="kaban"
+            width={367}
+            height={214}
+          />
           <div className="plus z-20">
             <Image src="/plus.svg" alt="plus" width={23} height={23} />
           </div>
         </div>
         <div className="relative flex flex-col justify-start items-center translate-y-[-11px]">
-          <Image src="/monkey.svg" alt="monkey" width={367} height={214} />
+          <Image
+            src={monkey}
+            placeholder="blur"
+            alt="monkey"
+            width={367}
+            height={214}
+          />
           <div className="plus z-20">
             <Image src="/plus.svg" alt="plus" width={23} height={23} />
           </div>
         </div>
         <div className="relative flex flex-col justify-start items-center">
-          <Image src="/hero.svg" alt="hero" width={367} height={214} />
+          <Image
+            src={hero}
+            placeholder="blur"
+            alt="hero"
+            width={367}
+            height={214}
+          />
           <div className="plus z-20">
             <Image src="/plus.svg" alt="plus" width={23} height={23} />
           </div>

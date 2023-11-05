@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Image from "next/image";
+import bob from "../public/bob.svg";
 
 const myFont = localFont({
   src: [
@@ -38,11 +39,12 @@ export default function RootLayout({
       <body className={myFont.className}>
         {children}
         <Image
-          src="/bob.svg"
+          src={bob}
           alt="bob"
           width={580}
           height={520}
           className="fixed bottom-0 right-0"
+          placeholder="blur"
         />
       </body>
     </html>

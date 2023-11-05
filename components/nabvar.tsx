@@ -1,4 +1,5 @@
 import Image from "next/image";
+import logo from "../public/logo.svg";
 
 const Navbar = () => {
   return (
@@ -10,11 +11,12 @@ const Navbar = () => {
           <li className="cursor-pointer">Вайт-лист</li>
         </ul>
         <Image
-          src="/logo.svg"
+          src={logo}
           alt="logo"
           width={237}
           height={58}
           className="cursor-pointer"
+          placeholder="blur"
         />
         <ul className="flex text-sm gap-12 justify-center items-center">
           <li className="cursor-pointer">Создатель nft</li>
